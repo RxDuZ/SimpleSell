@@ -1,0 +1,14 @@
+---
+Diamond:
+  id: diamond
+  price: 2
+Gold Ingot:
+  id: gold_ingot
+  price: 5
+Raw Gold:
+  id: raw_gold
+  price: 5
+Diamond Block:
+  id: diamond_block
+  price: 200
+...

@@ -1,0 +1,23 @@
+SELL_HAND_FORM_TITLE: "Sell Hand"
+
+SELL_HAND_FORM_TEXT: "¿Deseas vender x{COUNT}{ITEM_NAME}?"
+
+SELL_HAND_ITEM_NULL: "&cNo se puede vender un item nulo, por favor usa el item a vender en su mano."
+
+SELL_HAND_ITEM_INVALID: "&cEste item no es valido para vender."
+
+SELL_HAND_SUCCESS: "&aVendiste correctamente &ex{COUNT}{ITEM_NAME} &apor &e{PRICE}&a."
+
+SELL_ALL_FORM_TITLE: "Sell All"
+
+SELL_ALL_FORM_TEXT: "¿Deseas vender todos tus items posibles?"
+
+SELL_ALL_EMPTY: "&cNo tienes items para vender."
+
+SELL_ALL_SUCCESS: "&aVendiste &ex{COUNT}Items &apor &e{PRICE}&a."
+
+AUTO_SELL_ENABLED: "&aActivaste el auto-sell con exito."
+
+AUTO_SELL_DISABLED: "&cDesactivaste el auto-sell con exito."
+
+INVENTORY_FULL: "&cYour inventory is full"
