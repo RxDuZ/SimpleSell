@@ -1,0 +1,18 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/RxDuZ/SimpleSell
+build-by-default: true
+branches:
+- main
+projects:
+  SimpleSell:
+    path: ""
+    libs:
+      - src: dktapps-pm-pl/pmforms/pmforms
+        version: ^2.0.0
+      - src: poggit/libasynql/libasynql
+        version: ^4.2.0
+      - src: DaPigGuy/libPiggyEconomy/libPiggyEconomy
+        version: ^3.0.2
+      - src: ACM-PocketMine-MP/Commando/Commando
+        version: ^3.2.1
+        branch: PM5
+...
