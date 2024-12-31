@@ -13,11 +13,11 @@
 ## Installation & Setup
 
 1. Install the plugin from [Poggit](https://poggit.pmmp.io/ci/RxDuZ/SimpleSell/~).
-2. (Optional) Configure `config.yml` auto_collect_items, auto_collect_items and database.
-3. Once this is done, turn on the server.
-4. With the item in your hand use the command `/adminsell additem <price>` to add Item to sell.
-5. Use the command `/adminsell edititem` to edit item price.
-6. Use the command `/adminsell removeitem` to remove sell item.
+2. (Optional) Configure the `config.yml` file: auto_collect_items, auto_collect_xp and database.
+3. Once this is done, start the server.
+4. With the item in your hand, use the command `/adminsell additem <price>` to add an item to sell.
+5. Use the command `/adminsell edititem` to edit the item price.
+6. Use the command `/adminsell removeitem` to remove a sell item.
 
 ### Implementations
 
