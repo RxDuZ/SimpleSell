@@ -14,7 +14,7 @@ use rxduz\simplesell\Main;
 class AdminSellBaseCommand extends BaseCommand
 {
 
-    public function __construct(private Main $plugin)
+    public function __construct(Main $plugin)
     {
         parent::__construct($plugin, 'adminsell', 'Manage sell Items');
     }
@@ -23,11 +23,11 @@ class AdminSellBaseCommand extends BaseCommand
     {
         $this->setPermission('adminsell.command');
 
-        $this->registerSubCommand(new AddSellItem('additem', 'Add Item to sell', ['add']));
+        $this->registerSubCommand(new AddSellItem($this->getOwningPlugin(), 'additem', 'Add Item to sell', ['add']));
 
-        $this->registerSubCommand(new EditSellItem('edititem', 'Edit Item to sell', ['edit']));
+        $this->registerSubCommand(new EditSellItem($this->getOwningPlugin(), 'edititem', 'Edit Item to sell', ['edit']));
 
-        $this->registerSubCommand(new RemoveSellItem('removeitem', 'Remove Item to sell', ['remove']));
+        $this->registerSubCommand(new RemoveSellItem($this->getOwningPlugin(), 'removeitem', 'Remove Item to sell', ['remove']));
 
         $this->addConstraint(new InGameRequiredConstraint($this));
     }

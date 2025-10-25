@@ -1,7 +1,7 @@
 name: SimpleSell
 main: rxduz\simplesell\Main
-api: 5.23.0
-version: 0.0.1
+api: 5.36.0
+version: 0.1.1
 author: "iRxDuZ"
 
 permissions:

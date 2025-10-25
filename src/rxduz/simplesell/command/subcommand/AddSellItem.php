@@ -31,6 +31,7 @@ class AddSellItem extends BaseSubCommand
 
         $item = $sender->getInventory()->getItemInHand();
 
+        /** @var float $price */
         $price = $args[self::ARGUMENT_PRICE];
 
         if ($item->isNull()) {
@@ -48,15 +49,12 @@ class AddSellItem extends BaseSubCommand
         }
 
         $data = SellItemRegistry::DEFAULT_DATA;
-
         $id = StringToItemParser::getInstance()->lookupAliases($item)[0] ?? 'air';
 
         $data['id'] = $id;
-
         $data['price'] = $price;
 
         SellItemRegistry::getInstance()->create($itemName, $data);
-
-        $sender->sendMessage(TextFormat::GREEN . 'Register new ' . TextFormat::YELLOW . $itemName . TextFormat::GREEN . ' Item to sell for ' . TextFormat::YELLOW . $price . TextFormat::GREEN . '.');
+        $sender->sendMessage(TextFormat::GREEN . 'Register new ' . TextFormat::YELLOW . $itemName . TextFormat::GREEN . ' Item to sell for ' . TextFormat::YELLOW . '$' . number_format($price) . TextFormat::GREEN . '.');
     }
 }

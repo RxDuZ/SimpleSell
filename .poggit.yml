@@ -8,11 +8,10 @@ projects:
     icon: "img/SimpleSell.png"
     libs:
       - src: dktapps-pm-pl/pmforms/pmforms
-        version: ^2.0.0
+        version: ^2.1.0
       - src: poggit/libasynql/libasynql
-        version: ^4.2.0
+        version: ^4.2.3
       - src: DaPigGuy/libPiggyEconomy/libPiggyEconomy
-        version: ^3.0.2
-      - src: ACM-PocketMine-MP/Commando/Commando
+        version: ^3.0.3
+      - src: RxDuZ/Commando/Commando
         version: ^3.2.1
-        branch: PM5
