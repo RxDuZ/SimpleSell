@@ -15,27 +15,21 @@ use rxduz\simplesell\registry\SellItemRegistry;
 use rxduz\simplesell\translation\Translation;
 use rxduz\simplesell\utils\FormUtils;
 
-class SellBaseCommand extends BaseCommand
-{
+class SellBaseCommand extends BaseCommand {
 
     private const ARGUMENT_SELL_TYPE = 'sellType';
 
-    public function __construct(private Main $plugin)
-    {
+    public function __construct(Main $plugin) {
         parent::__construct($plugin, 'sell', 'Sell your Items', ['vender']);
     }
 
-    public function prepare(): void
-    {
+    public function prepare(): void {
         $this->setPermission('sell.command');
-
         $this->registerArgument(0, new RawStringArgument(self::ARGUMENT_SELL_TYPE));
-
         $this->addConstraint(new InGameRequiredConstraint($this));
     }
 
-    public function onRun(CommandSender $sender, string $aliasUsed, array $args): void
-    {
+    public function onRun(CommandSender $sender, string $aliasUsed, array $args): void {
 
         assert($sender instanceof Player);
 
